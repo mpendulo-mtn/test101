@@ -1,0 +1,22 @@
+{
+  "_pleaseNote": "Auto generated file for future use. Please do not edit",
+  "project": {
+    "name": "test101",
+    "description": "Basic",
+    "title": "",
+    "author": "Kente",
+    "adoTaskNumber": "1",
+    "features": {
+      "registeredInAppStore": false,
+      "semanticRelease": false,
+      "repoName": "test101"
+    },
+    "template": "ta-template"
+  },
+  "runtime": {
+    "cli": "1.0.0",
+    "node": "v20.11.1",
+    "path": "test101"
+  },
+  "version": "1.0.0"
+}
