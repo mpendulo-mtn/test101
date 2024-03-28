@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "./.tsbuild/",
+    "sourceMap": false,
+    "target": "es2019",
+    "module": "commonjs",
+    "removeComments": true,
+    "noImplicitAny": true,
+    "strictPropertyInitialization": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "types": ["node", "webdriverio/async", "@wdio/mocha-framework", "expect-webdriverio"]
+  },
+  "include": ["./config/**/*.ts", "./tests/**/*.ts", "src/api/tests/apiTest.ts"]
+}
