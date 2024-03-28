@@ -1,0 +1,40 @@
+{
+  "name": "test101",
+  "version": "1.0.0",
+  "description": "Basic",
+  "author": "Kente",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtn-kente/test101.git"
+  },
+  "dependencies": {
+    "appium": "2.4.1",
+    "appium-uiautomator2-driver": "^2.44.0",
+    "appium-xcuitest-driver": "6.0.1",
+    "ts-node": "10.9.2",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.41.2",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "20.11.16",
+    "@wdio/allure-reporter": "8.30.0",
+    "@wdio/appium-service": "8.30.0",
+    "@wdio/cli": "^8.30.0",
+    "@wdio/local-runner": "8.30.0",
+    "@wdio/mocha-framework": "8.30.0",
+    "@wdio/spec-reporter": "8.30.0",
+    "allure-playwright": "^2.12.2",
+    "wdio-vscode-service": "^5.2.3"
+  },
+  "scripts": {
+    "build": "npm install",
+    "web_ui_test": "npx playwright test --update-snapshots --project=chromium --config=./base.config.ts",
+    "android_test": "wdio config/mobileConfig/wdio.android.conf.ts",
+    "ios_test": "wdio config/mobileConfig/wdio.ios.conf.ts",
+    "generate_webui_report": "allure generate report/test-results/webui-allure-results -o report/allure-report --clean",
+    "generate_api_report": "allure generate report/test-results/api-allure-results -o repott/allure-report --clean",
+    "generate_mobile_report": "allure generate report/test-results/mobile-allure-results -o report/allure-report --clean",
+    "open_report": "allure open report/allure-report"
+  }
+}
